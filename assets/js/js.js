@@ -1,10 +1,15 @@
 $(document).ready(function () {
+	window.twitterWidgets = {};
 	jQuery.ajax('https://api.github.com/orgs/FoundationDriven/repos').done(function (projects) {
 		var append = "";
 		var i;
 		for (i = 0; i < projects.length; ++i) {
 			var project = projects[i];
-			append += '<div class=\"slide project\">\r<div class=\"sectionMain\">\r<h1 class=\"project-name\">' + project.name + '<\/h1>\r<p class=\"project-description\">' + project.description + '<\/p>\r<a class=\"twitter-timeline\" href=\"https:\/\/twitter.com\/search?q=%23foundationdriven%20%23foundation\" data-widget-id=\"541593139824590848\">Tweets about #foundationdriven #foundation<\/a>\r\n<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=\/^http:\/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\":\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<\/script><div class=\"project-icons\">\r<a href=\"' + project.html_url + '\" class=\"project-link\"><i class=\"fa fa-github fa-6\"><\/i><\/a>\r<a href=\"' + project.homepage + '\" class=\"project-link\"><i class=\"fa fa-cloud-download fa-6\"><\/i><\/a>\r<\/div>\r<\/div>\r<\/div>';
+			append += '<div class=\"slide project\">\r<div class=\"sectionMain\">\r<h1 class=\"project-name\">' + project.name + '<\/h1>\r<p class=\"project-description\">' + project.description + '<\/p>\r'
+			if (window.twitterWidgets[project.name]) {
+				append += window.twitterWidgets[project.name];
+			}
+			append += '<div class=\"project-icons\">\r<a href=\"' + project.html_url + '\" class=\"project-link\"><i class=\"fa fa-github fa-6\"><\/i><\/a>\r<a href=\"' + project.homepage + '\" class=\"project-link\"><i class=\"fa fa-cloud-download fa-6\"><\/i><\/a>\r<\/div>\r<\/div>\r<\/div>';
 		}
 		$('#section2').append(append);
 		console.log('Loaded and wrote repositories');
