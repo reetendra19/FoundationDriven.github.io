@@ -9,7 +9,11 @@ $(document).ready(function () {
 			if (window.twitterWidgets[project.name]) {
 				append += window.twitterWidgets[project.name];
 			}
-			append += '<div class=\"project-icons\">\r<a href=\"' + project.html_url + '\" class=\"project-link\"><i class=\"fa fa-github fa-6\"><\/i><\/a>\r<a href=\"' + project.homepage + '\" class=\"project-link\"><i class=\"fa fa-cloud-download fa-6\"><\/i><\/a>\r<\/div>\r<\/div>\r<\/div>';
+			append += '<div class=\"project-icons\">\r<a href=\"' + project.html_url + '\" class=\"project-link\"><i class=\"fa fa-github fa-6\"><\/i><\/a>\r'
+			if (project.homepage) {
+				append += '<a href=\"' + project.homepage + '\" class=\"project-link\"><i class=\"fa fa-cloud-download fa-6\"><\/i><\/a>\r';
+			}
+			append += '<\/div>\r<\/div>\r<\/div>';
 		}
 		$('#section2').append(append);
 		console.log('Loaded and wrote repositories');
