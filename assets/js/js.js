@@ -1,5 +1,8 @@
 $(document).ready(function () {
-	window.twitterWidgets = {};
+	window.twitterWidgets = {
+		'Foundation': '<a class=\"twitter-timeline\" href=\"https:\/\/twitter.com\/search?q=%23foundationdriven%20%23foundation\" data-widget-id=\"541593139824590848\">Tweets about #foundationdriven #foundation<\/a>\r\n<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=\/^http:\/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\":\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<\/script>',
+		'Sponge.js': '<a class=\"twitter-timeline\" href=\"https:\/\/twitter.com\/search?q=%23foundationdriven%20%23spongejs\" data-widget-id=\"541602949085270016\">Tweets about #foundationdriven #spongejs<\/a>\r\n<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=\/^http:\/.test(d.location)?\'http\':\'https\';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\":\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<\/script>'
+	};
 	jQuery.ajax('https://api.github.com/orgs/FoundationDriven/repos').done(function (projects) {
 		var append = "";
 		var i;
