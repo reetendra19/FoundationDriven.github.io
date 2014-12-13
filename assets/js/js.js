@@ -60,6 +60,7 @@ $(document).ready(function () {
 				responsive: 1,
 			});
 			$('.tooltip').tooltipster();
+			$('#loadingPage').fadeOut(500);
 		});
 	});
 
