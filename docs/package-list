@@ -1,6 +1,11 @@
+
 io.foundationdriven.foundation.api.ban
 io.foundationdriven.foundation.api.economy.errors
 io.foundationdriven.foundation.api.economy.managers
 io.foundationdriven.foundation.api.economy.objects
+io.foundationdriven.foundation.api.formatting
+io.foundationdriven.foundation.api.formatting.errors
+io.foundationdriven.foundation.api.formatting.loading
+io.foundationdriven.foundation.api.formatting.styles
 io.foundationdriven.foundation.api.module
 io.foundationdriven.foundation.core
