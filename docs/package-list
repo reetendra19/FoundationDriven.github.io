@@ -8,4 +8,7 @@ io.foundationdriven.foundation.api.formatting.errors
 io.foundationdriven.foundation.api.formatting.loading
 io.foundationdriven.foundation.api.formatting.styles
 io.foundationdriven.foundation.api.module
+io.foundationdriven.foundation.api.teleportation.errors
+io.foundationdriven.foundation.api.teleportation.managers
+io.foundationdriven.foundation.api.teleportation.objects
 io.foundationdriven.foundation.core
