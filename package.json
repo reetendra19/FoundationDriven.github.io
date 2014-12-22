@@ -1,0 +1,30 @@
+{
+  "name": "FoundationDriven-Website",
+  "version": "0.0.0",
+  "description": "The website for FoundationDriven",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.8.10"
+  },
+  "devDependencies": {
+    "gulp-coffee": "~2.2.0",
+    "gulp-util": "~3.0.1",
+    "gulp-compass": "~2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FoundationDriven/FoundationDriven.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "gulp"
+  ],
+  "author": "OscarOrSomething",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FoundationDriven/FoundationDriven.github.io/issues"
+  }
+}
