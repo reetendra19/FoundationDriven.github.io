@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Lobster+Two);
+ html {
+	padding: 0px;
+}
+@mixin sectionStyling($img) {
+	height: 100vh;
+	background-image: url($img);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+@mixin sectionTitle() {
+	font-family: 'Lobster Two', cursive;
+	font-weight: 700;
+	font-size: 48px;
+}
+@mixin sectionContent() {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+#code {
+	background-repeat: repeat;
+	background-size: auto;
+}
+div#intro {
+	@include sectionStyling('../img/intro.png');
+}
+.sectionInner {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+}
+.sectionTitle {
+	@include sectionTitle();
+}
+.sectionContent {
+	@include sectionContent();
+}
+#nav {
+	background-color: #FCFCFC;
+	padding: 5px;
+}
+#navContainer {
+	text-align: center;
+}
+#navList {
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+#navList li {
+	display: inline;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#navlist li a {
+	color: #000;
+	text-decoration: none;
+}
+#newBreed {
+	@include sectionStyling('../img/newBreed.png');
+}
+#code {
+	@include sectionStyling('../img/code.png');
+}
+#more {
+	@include sectionStyling('../img/more.png');
+}
+#moreTitle {} #introTitle {
+	color: #000;
+}
+#newBreedTitle {
+	color: #fff;
+}
+#codeTitle {
+	color: #000;
+}
+#moreContent {} #introContent {
+	color: #000;
+}
+#newBreedContent {
+	color: #000;
+}
+#codeContent {
+	color: #000;
+}
+#portrait {
+	background-color: red;
+	height: 100vh;
+	width: 100%;
+}
+@media screen and (orientation: landscape) {
+	#portrait {
+		display: none;
+	}
+}
+@media screen and (orientation: portrait) {
+	#main {
+		display: none;
+	}
+}

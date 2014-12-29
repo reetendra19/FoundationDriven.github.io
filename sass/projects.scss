@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Lobster+Two);
+html,body {
+	margin: 0px;
+	padding: 0px;
+}
+ #main {
+	padding-top: 64px;
+}
+.project {
+	text-align: center;
+	width: 100%;
+	height: 50vh;
+}
+.projectInner {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.projectTitle {
+	font-family: 'Lobster Two', cursive;
+}
+.projectShortDescription {
+	font-family: 'Open Sans', sans-serif;
+}
+.projectLinks {
+	width: 100%;
+}
+.projectLink {
+	color: inherit;
+	text-decoration: none;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+#foundationProject {
+	color: #fff;
+	background-image: url('../img/foundation.png');
+}
+#foundationProjectTitle {} #foundationProjectLinks {} #spongeJsProject {
+	color: #fff;
+	background-image: url('../img/spongeJs.png');
+}
+#spongeJsProjectTitle {} #spongeJsProjectLinks {} #nav {
+	background-color: #FCFCFC;
+	padding: 5px;
+	position: fixed;
+	width: 100%;
+}
+#navContainer {
+	text-align: center;
+}
+#navList {
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+#navList li {
+	display: inline;
+	padding: 5px;
+	margin: 0px 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#navlist li a {
+	color: #000;
+	text-decoration: none;
+}
+@media screen and (orientation: landscape) {
+	#portrait {
+		display: none;
+	}
+}
+@media screen and (orientation: portrait) {
+	#main {
+		display: none;
+	}
+}

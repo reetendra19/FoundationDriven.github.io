@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Lobster+Two);
+html {
+  padding: 0px;
+}
+
+#code {
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+div#intro {
+  height: 100vh;
+  background-image: url("../img/intro.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sectionInner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.sectionTitle {
+  font-family: 'Lobster Two', cursive;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.sectionContent {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+#nav {
+  background-color: #FCFCFC;
+  padding: 5px;
+}
+
+#navContainer {
+  text-align: center;
+}
+
+#navList {
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+#navList li {
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#navlist li a {
+  color: #000;
+  text-decoration: none;
+}
+
+#newBreed {
+  height: 100vh;
+  background-image: url("../img/newBreed.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#code {
+  height: 100vh;
+  background-image: url("../img/code.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#more {
+  height: 100vh;
+  background-image: url("../img/more.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#introTitle {
+  color: #000;
+}
+
+#newBreedTitle {
+  color: #fff;
+}
+
+#codeTitle {
+  color: #000;
+}
+
+#introContent {
+  color: #000;
+}
+
+#newBreedContent {
+  color: #000;
+}
+
+#codeContent {
+  color: #000;
+}
+
+#portrait {
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (orientation: landscape) {
+  #portrait {
+    display: none;
+  }
+}
+@media screen and (orientation: portrait) {
+  #main {
+    display: none;
+  }
+}
