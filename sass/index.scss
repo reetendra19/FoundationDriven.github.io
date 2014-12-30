@@ -6,7 +6,8 @@
 	height: 100vh;
 	background-image: url($img);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 }
 @mixin sectionTitle() {
 	font-family: 'Lobster Two', cursive;
@@ -16,10 +17,6 @@
 @mixin sectionContent() {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-}
-#code {
-	background-repeat: repeat;
-	background-size: auto;
 }
 div#intro {
 	@include sectionStyling('../img/intro.png');

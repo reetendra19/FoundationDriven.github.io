@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Lobster+Two);
+@import "compass";
+@import "susy";
+ html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+#main {
+	padding-top: 64px;
+}
+#questions {
+	margin: 0px auto;	
+}
+.question {
+	border: 1px solid #000;
+	padding: 5px;
+	text-align: center;
+	width: 50%;
+	margin: 0px auto;
+}
+.questionTitle {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+}
+.questionAnswer {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+#nav {
+	background-color: #FCFCFC;
+	padding: 5px;
+	position: fixed;
+	width: 100%;
+}
+#navContainer {
+	text-align: center;
+}
+#navList {
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+}
+#navList li {
+	display: inline;
+	padding: 5px;
+	margin: 0px 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#navlist li a {
+	color: #000;
+	text-decoration: none;
+}

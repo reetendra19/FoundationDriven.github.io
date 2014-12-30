@@ -69,13 +69,3 @@ html,body {
 	color: #000;
 	text-decoration: none;
 }
-@media screen and (orientation: landscape) {
-	#portrait {
-		display: none;
-	}
-}
-@media screen and (orientation: portrait) {
-	#main {
-		display: none;
-	}
-}

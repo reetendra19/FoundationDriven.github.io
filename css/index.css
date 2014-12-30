@@ -3,16 +3,12 @@ html {
   padding: 0px;
 }
 
-#code {
-  background-repeat: repeat;
-  background-size: auto;
-}
-
 div#intro {
   height: 100vh;
   background-image: url("../img/intro.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .sectionInner {
@@ -68,21 +64,24 @@ div#intro {
   height: 100vh;
   background-image: url("../img/newBreed.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 #code {
   height: 100vh;
   background-image: url("../img/code.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 #more {
   height: 100vh;
   background-image: url("../img/more.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 #introTitle {
