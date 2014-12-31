@@ -18,6 +18,11 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
+@media screen and (min-width: 35.5em) {
+	.sectionTitle {
+		font-size: 28px;
+	}
+}
 div#intro {
 	@include sectionStyling('../img/intro.png');
 }
