@@ -1,6 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800|Lobster+Two);
-@import "compass";
-@import "susy";
  html,
 body {
 	margin: 0px;
@@ -10,7 +8,7 @@ body {
 	padding-top: 64px;
 }
 #questions {
-	margin: 0px auto;	
+	margin: 0px auto;
 }
 .question {
 	border: 1px solid #000;

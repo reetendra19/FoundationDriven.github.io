@@ -9,23 +9,6 @@
 	background-size: cover;
 	background-position: center;
 }
-@mixin sectionTitle() {
-	font-family: 'Lobster Two', cursive;
-	font-weight: 700;
-	font-size: 48px;
-}
-@mixin sectionContent() {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-}
-@media screen and (min-width: 35.5em) {
-	.sectionTitle {
-		font-size: 28px;
-	}
-}
-div#intro {
-	@include sectionStyling('../img/intro.png');
-}
 .sectionInner {
 	position: relative;
 	top: 50%;
@@ -33,10 +16,18 @@ div#intro {
 	text-align: center;
 }
 .sectionTitle {
-	@include sectionTitle();
+	font-family: 'Lobster Two', cursive;
+	font-weight: 700;
+	font-size: 48px;
+}
+@media screen and (min-width: 35.5em) {
+	.sectionTitle {
+		font-size: 28px;
+	}
 }
 .sectionContent {
-	@include sectionContent();
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
 #nav {
 	background-color: #FCFCFC;
@@ -64,6 +55,9 @@ div#intro {
 	color: #000;
 	text-decoration: none;
 }
+#intro {
+	@include sectionStyling('../img/intro.png');
+}
 #newBreed {
 	@include sectionStyling('../img/newBreed.png');
 }
@@ -73,7 +67,7 @@ div#intro {
 #more {
 	@include sectionStyling('../img/more.png');
 }
-#moreTitle {} #introTitle {
+#introTitle {
 	color: #000;
 }
 #newBreedTitle {
@@ -82,7 +76,7 @@ div#intro {
 #codeTitle {
 	color: #000;
 }
-#moreContent {} #introContent {
+#moreTitle {} #introContent {
 	color: #000;
 }
 #newBreedContent {
@@ -91,8 +85,4 @@ div#intro {
 #codeContent {
 	color: #000;
 }
-#portrait {
-	background-color: red;
-	height: 100vh;
-	width: 100%;
-}
+#moreContent {}
